@@ -1,0 +1,40 @@
+
+**** Clean-only build of configuration Debug for project Lab3-2-2 LPM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k clean 
+DEL /F  "Lab3-2-2 LPM.out" 
+Could Not Find C:\Users\a0220279\Desktop\2016Roadshow\2016 PPT\MSP430F5529\Labs_v1.1\Lab3-2-2 LPM\Debug\Lab3-2-2 LPM.out
+DEL /F "main.pp" 
+DEL /F "main.obj" 
+Could Not Find C:\Users\a0220279\Desktop\2016Roadshow\2016 PPT\MSP430F5529\Labs_v1.1\Lab3-2-2 LPM\Debug\main.obj
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3-2-2 LPM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.7/bin/cl430" -vmspx --abi=eabi -g --include_path="C:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.7/include" --advice:power=all --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 77: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: Lab3-2-2 LPM.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.7/bin/cl430" -vmspx --abi=eabi -g --advice:power=all --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z --stack_size=160 -m"Lab3-2-2 LPM.map" --heap_size=160 --use_hw_mpy=F5 -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.7/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.7/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Lab3-2-2 LPM_linkInfo.xml" --rom_model -o "Lab3-2-2 LPM.out" "./main.obj" "../lnk_msp430f5529.cmd"  -l"libc.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10422-D: (ULP 6.2) Detected use of a device with available 32-bit hardware multiplier and not also using MSPMATHLIB library (libmath.a).  Recommend using MSPMATHLIB library (libmath.a) for improved performance.
+'Finished building target: Lab3-2-2 LPM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3-2-2 LPM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
